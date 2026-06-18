@@ -1,2 +1,13 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+# Keep authored text files LF so the content hashes recorded in index.toml stay
+# stable across machines and checkouts. If git rewrote .glsl/.toml to CRLF, the
+# sha256 the engine verifies against would no longer match the published files.
+* text=auto eol=lf
+*.glsl text eol=lf
+*.toml text eol=lf
+*.md   text eol=lf
+*.ps1  text eol=lf
+
+# Binary assets — never touch line endings.
+*.png  binary
+*.jpg  binary
+*.jpeg binary

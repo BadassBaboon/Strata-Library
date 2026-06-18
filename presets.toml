@@ -16,7 +16,7 @@ schema_version = 1
 [meta]
 # Shown as the Automatic-mode pro-tip. Keep it short.
 profiled_on = "Ryzen 9 9950X3D (16C/32T) + 48 GB RAM, DirectML GPU acceleration"
-protip = "RAM/CPU figures are approximate and were measured on a high-end rig — they scale with your hardware. Fast/Balanced are comfortable on modest systems; Quality and Max want a capable GPU and 16 GB+ RAM. Pick Fast Sharp for crisp detail on a light machine."
+protip = "Fast and Fast Sharp presets work perfectly fine for almost every Parallax wallpaper generation. Only use higher-quality presets if you have a powerful PC with more than 12 GB of RAM."
 
 # ── Presets (ordered light → heavy; "Fast Sharp" is a crisp light variant) ─────
 

@@ -11,7 +11,7 @@ sha256 = "a836e35aebdca11bef08c7063752704341561ef3e0d78b01804d44a292bcf056"
 
 [files.presets]
 version = "1.0.0"
-sha256 = "8c9a25525a13d302efc22d483bfa832107094f9f04ed103ef5a17c02170d1fe0"
+sha256 = "008e42acb922f222af2790a201b3cc1b80771e4c26a82c3ff1103a224c313ae0"
 
 [[shader]]
 slug = "1d-radial-lightmap"
