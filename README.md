@@ -1,13 +1,10 @@
 # Strata-Library
 
-The shared content library for **[Strata](https://github.com/)** — the lightweight
+The shared content library for **[Strata](https://github.com/BadassBaboon/Strata)** — the lightweight
 Rust + wgpu live-wallpaper engine. Strata's engine ships with **no** shaders,
 models, or presets baked in; instead it fetches this library at first launch and
 re-syncs on demand. Keeping content here keeps the engine repo small and
 license-clean, and lets the community add wallpapers without touching engine code.
-
-> **Status:** prototype. The layout and `index.toml` schema below are what the
-> engine reads; expect refinement before the first published `library-v1.0.0` tag.
 
 ## Layout
 
@@ -71,8 +68,8 @@ cargo test -p core-engine --test assemble_library -- --ignored
 ## Distribution
 
 Published via **jsDelivr** off this repo's GitHub releases, pinned to an immutable
-tag — e.g. `https://cdn.jsdelivr.net/gh/<owner>/Strata-Library@library-v1.0.0/…`.
-Use the explicit `@library-v1.0.0` tag (not `@latest`) so a given engine build
+tag — e.g. `https://cdn.jsdelivr.net/gh/BadassBaboon/Strata-Library@library-v1.0.0/…`.
+Uses the explicit `@library-v1.0.0` tag (not `@latest`) so a given engine build
 always resolves a known-good, cacheable snapshot.
 
 ## Contributing a wallpaper
