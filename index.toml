@@ -1,0 +1,294 @@
+# Strata-Library manifest. Regenerate with:
+#   cargo test -p core-engine --test assemble_library -- --ignored
+
+schema_version = 1
+library_version = "1.0.0"
+
+# Registry files (hash lets a client know when to re-fetch them).
+[files.models]
+version = "1.0.0"
+sha256 = "a836e35aebdca11bef08c7063752704341561ef3e0d78b01804d44a292bcf056"
+
+[files.presets]
+version = "1.0.0"
+sha256 = "8c9a25525a13d302efc22d483bfa832107094f9f04ed103ef5a17c02170d1fe0"
+
+[[shader]]
+slug = "1d-radial-lightmap"
+name = "1D Radial Lightmap"
+author = "Flyguy"
+source_url = "https://www.shadertoy.com/view/XsK3RR"
+tags = ["Lighting", "Interactive", "2D", "Abstract"]
+added_in = "1.0.0"
+updated = "2026-06-18"
+sha256 = "41f2ec9ddd3bee472e57cbd3a2d893c4783bb18dc772af468bab01b0a10ac401"
+
+[[shader]]
+slug = "3d-audio-visualizer"
+name = "3D Audio Visualizer"
+author = "kishimisu"
+source_url = "https://www.shadertoy.com/view/dtl3Dr"
+tags = ["Audio Reactive", "3D", "Visualizer"]
+added_in = "1.0.0"
+updated = "2026-06-18"
+sha256 = "a1fe464d4093b284ff466a3125b7db4f8c98316af05c3fea48234b2a6fcab3a5"
+
+[[shader]]
+slug = "audio-visualizer"
+name = "Audio Visualizer"
+author = "pixartist"
+source_url = "https://www.shadertoy.com/view/lscXzN"
+tags = ["Audio Reactive", "Visualizer", "Feedback", "Colorful"]
+added_in = "1.0.0"
+updated = "2026-06-18"
+sha256 = "3791786ffb79547e63543aaee9d02b2bfa3658e48b2e5123d178abe17379adcf"
+
+[[shader]]
+slug = "audio-visualizer-raymarching"
+name = "Audio Visualizer Raymarching"
+author = "Lallis"
+source_url = "https://www.shadertoy.com/view/Xd3GRX"
+tags = ["Audio Reactive", "Raymarching", "Visualizer"]
+added_in = "1.0.0"
+updated = "2026-06-18"
+sha256 = "2993755f7c094cad35708b22db01590bd99617701870d8af407921e2596ea612"
+
+[[shader]]
+slug = "basic-audio-visualizer"
+name = "Basic Audio Visualizer"
+author = "Lallis"
+source_url = "https://www.shadertoy.com/view/4lGSzy"
+tags = ["Audio Reactive", "Visualizer", "Minimal"]
+added_in = "1.0.0"
+updated = "2026-06-18"
+sha256 = "69860735b5c2756a0be12ea9ca26ae120484de733bb743d2b78f31c4533c1a1d"
+
+[[shader]]
+slug = "blue-red-shiny-2"
+name = "Blue Red Shiny 2"
+author = "diatribes"
+source_url = "https://www.shadertoy.com/view/7cjGRR"
+tags = ["Abstract", "Shiny", "Colorful"]
+added_in = "1.0.0"
+updated = "2026-06-18"
+sha256 = "229bc4a5f68dc3ec6521bbe040e8c8d9c937035ee9b9476f146cad4069224974"
+
+[[shader]]
+slug = "circular-bar-audio-visualizer"
+name = "Circular Bar Audio Visualizer"
+author = "Tater"
+source_url = "https://www.shadertoy.com/view/7dB3Rz"
+tags = ["Audio Reactive", "Visualizer", "Circular", "Interactive"]
+added_in = "1.0.0"
+updated = "2026-06-18"
+sha256 = "ff21924e396893e574de93813dfe372b96b35b08966fb1e938df0010d1e59e60"
+
+[[shader]]
+slug = "clearly-a-bug"
+name = "Clearly a Bug"
+author = "mrange"
+source_url = "https://www.shadertoy.com/view/33cGDj"
+tags = ["Abstract", "Organic", "Creature", "Animated"]
+added_in = "1.0.0"
+updated = "2026-06-18"
+sha256 = "be83d80914ba66a4e182b1b0b25c3c7dabe61d29065b0899346db457d0dd364e"
+
+[[shader]]
+slug = "clock-of-clocks"
+name = "Clock of Clocks"
+author = "msingdahl"
+source_url = "https://www.shadertoy.com/view/ws2XRd"
+tags = ["Clock", "Minimal", "Time"]
+added_in = "1.0.0"
+updated = "2026-06-18"
+sha256 = "7fb873090cf5ff1ab3bf611cd128cccbff684e60df58da8bc3c3484425556f84"
+
+[[shader]]
+slug = "clock-time"
+name = "Clock Time"
+author = "byt3_m3chanic"
+source_url = "https://www.shadertoy.com/view/tX2XDh"
+tags = ["Clock", "Digital", "Time"]
+added_in = "1.0.0"
+updated = "2026-06-18"
+sha256 = "a46ba10e71f578b43bdde6f8c652647ada8e4cbe359fb89a615b9e36def666fd"
+
+[[shader]]
+slug = "coastal-landscape"
+name = "Coastal Landscape"
+author = "bitless"
+source_url = "https://www.shadertoy.com/view/fstyD4"
+tags = ["Landscape", "Nature", "Water"]
+added_in = "1.0.0"
+updated = "2026-06-18"
+sha256 = "6f710a033cf59cbf2510cdcb69aaa07a93db8f612fb8bb6f401653150cdc5f36"
+
+[[shader]]
+slug = "electric-eel-universe"
+name = "Electric Eel Universe"
+author = "mrange"
+source_url = "https://www.shadertoy.com/view/cdV3DW"
+tags = ["Space", "Electric", "Abstract"]
+added_in = "1.0.0"
+updated = "2026-06-18"
+sha256 = "5d627ab560ac70f7a19ad08a78950e9118d7c2368728719fb2629a0b9e8f9076"
+
+[[shader]]
+slug = "electro-cardiogram"
+name = "Electro Cardiogram"
+author = "Loewe"
+source_url = "https://www.shadertoy.com/view/XsyGzD"
+tags = ["Minimal", "Line", "Animated", "Medical"]
+added_in = "1.0.0"
+updated = "2026-06-18"
+sha256 = "5cb9e2908ee6ad4bc852a732d9a4174929a7f2d848a97f2403907342929e8c14"
+
+[[shader]]
+slug = "full-spectrum-cyber"
+name = "Full Spectrum Cyber"
+author = "Kali"
+source_url = "https://www.shadertoy.com/view/XcXXzS"
+tags = ["Cyber", "Neon", "Fractal", "Abstract"]
+added_in = "1.0.0"
+updated = "2026-06-18"
+sha256 = "61074b17d9e3e6d3f86cf0cdc1788707167b69cca90fff7af581fa3a0a95e4b3"
+
+[[shader]]
+slug = "inercia-intended-one"
+name = "Inercia Intended One"
+author = "0b5vr"
+source_url = "https://www.shadertoy.com/view/cs2GWD"
+tags = ["Audio Reactive", "Demoscene", "3D", "Abstract"]
+added_in = "1.0.0"
+updated = "2026-06-18"
+sha256 = "0c897fba9a1a5dde29dbbf1f0930b8f9b4a9cdcfbac5610ac3c918f616101c1c"
+
+[[shader]]
+slug = "iridescent-fibers"
+name = "Iridescent Fibers"
+author = "evesira"
+source_url = "https://www.shadertoy.com/view/tffSDr"
+tags = ["Iridescent", "Abstract", "Organic", "Colorful"]
+added_in = "1.0.0"
+updated = "2026-06-18"
+sha256 = "24f2955a971c64167712f6d204e2e1f99b0042ec1bc3ba453fd684e9715983e0"
+
+[[shader]]
+slug = "kitties"
+name = "Kitties"
+author = "Xibanya"
+source_url = "https://www.shadertoy.com/view/7lcyz8"
+tags = ["Animals", "Cute", "Kitties"]
+added_in = "1.0.0"
+updated = "2026-06-18"
+sha256 = "fa8ed04ec8c89f6d07da4bf6d2773941e691fa7f9aa2dbc6f12a991d394feb26"
+
+[[shader]]
+slug = "mandelbrot-pattern-decoration"
+name = "Mandelbrot Pattern"
+author = "Shane"
+source_url = "https://www.shadertoy.com/view/ttscWn"
+tags = ["Fractal", "Mandelbrot", "Mathematical"]
+added_in = "1.0.0"
+updated = "2026-06-18"
+sha256 = "171606468c812d3a9a2cd28269e5ecbf397444079709c59b82a9bd51473d0887"
+
+[[shader]]
+slug = "neonwave-sunrise"
+name = "Neonwave Sunrise"
+author = "mrange"
+source_url = "https://www.shadertoy.com/view/7dyyRy"
+tags = ["Retro", "Synthwave", "Sunrise", "Audio Reactive"]
+added_in = "1.0.0"
+updated = "2026-06-18"
+sha256 = "52ebf375aa1203ae9f51c63ebeaa225f44c5f70827e360e41a975f637946e258"
+
+[[shader]]
+slug = "nixie-tube-clock"
+name = "Nixie Tube Clock"
+author = "picoplanetdev"
+source_url = "https://www.shadertoy.com/view/Dds3WB"
+tags = ["Clock", "Retro", "Nixie"]
+added_in = "1.0.0"
+updated = "2026-06-18"
+sha256 = "5b8bb5b1f8d512b4f52c1d4be801c919e35bdfd6f17076df4ea204d95d6befc1"
+
+[[shader]]
+slug = "power-chainsaw-man"
+name = "Power Chainsaw Man"
+author = "panna_pudi"
+source_url = "https://www.shadertoy.com/view/cljGR3"
+tags = ["Anime", "Chainsaw Man", "Audio Reactive"]
+added_in = "1.0.0"
+updated = "2026-06-18"
+sha256 = "b01d8556c82cb3e46e588e4501768d6cd6443afaa69647f3085394d8f5cc6453"
+
+[[shader]]
+slug = "retro-sun"
+name = "Retro Sun"
+author = "FraglessPlayer"
+source_url = "https://www.shadertoy.com/view/4dcyW7"
+tags = ["Retro", "Synthwave", "Sunset", "Sun"]
+added_in = "1.0.0"
+updated = "2026-06-18"
+sha256 = "d77bd467b684f3bed14e79326e0b6b6f1bd07bdfcab56999cd62300afbc30162"
+
+[[shader]]
+slug = "saturday-torus"
+name = "Saturday Torus"
+author = "mrange"
+source_url = "https://www.shadertoy.com/view/fd33zn"
+tags = ["Torus", "Geometric", "3D", "Abstract"]
+added_in = "1.0.0"
+updated = "2026-06-18"
+sha256 = "29f5e3157f1917013c2e8843c7ec054ceb45dd79d50cc9cb6f04741cefd8adf6"
+
+[[shader]]
+slug = "shader-royale"
+name = "Shader Royale"
+author = "NuSan"
+source_url = "https://www.shadertoy.com/view/3l3Bzl"
+tags = ["Abstract", "Feedback", "Colorful", "Animated"]
+added_in = "1.0.0"
+updated = "2026-06-18"
+sha256 = "98e151db98ab79a3e8ba944e9f3cee5b922b769ef4d6f8a0bf0cb4810bd59b60"
+
+[[shader]]
+slug = "squares-background-v2"
+name = "Squares Background v2"
+author = "vamoss"
+source_url = "https://www.shadertoy.com/view/MdVXzw"
+tags = ["Geometric", "Minimal", "Blue", "Background"]
+added_in = "1.0.0"
+updated = "2026-06-18"
+sha256 = "8aacbbc324b03335b5581432d49d392279354dd2f141a71e99b1fa39acef8303"
+
+[[shader]]
+slug = "starry-planes"
+name = "Starry Planes"
+author = "mrange"
+source_url = "https://www.shadertoy.com/view/MfjyWK"
+tags = ["Space", "Stars", "Abstract", "Psychedelic"]
+added_in = "1.0.0"
+updated = "2026-06-18"
+sha256 = "ecfe60714666a95279c9bea1f3ae27f42e3a74a7b8374162364e16d038302b26"
+
+[[shader]]
+slug = "walk-like-an-egyptian"
+name = "Walk Like an Egyptian"
+author = "XT95"
+source_url = "https://www.shadertoy.com/view/msjGzw"
+tags = ["Raymarching", "3D", "Scene", "Egyptian"]
+added_in = "1.0.0"
+updated = "2026-06-18"
+sha256 = "38dcf61e0d3ba43739d172b03f050d0a849fdc72b782d38c1bc810b6eb5ce62b"
+
+[[shader]]
+slug = "windows-95"
+name = "Windows 95"
+author = "ungzd"
+source_url = "https://www.shadertoy.com/view/XstXR2"
+tags = ["Retro", "Nostalgia", "Minimal", "Abstract"]
+added_in = "1.0.0"
+updated = "2026-06-18"
+sha256 = "9bf99cdc10cef5e65cf65ad20ed8fea3b1e6154b3be5dcc838ca4e36b6257867"

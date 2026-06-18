@@ -1,0 +1,13 @@
+[wallpaper]
+name = "Circular Bar Audio Visualizer"
+author = "Tater"
+source_url = "https://www.shadertoy.com/view/7dB3Rz"
+version = "1.0.0"
+passes = ["image"]
+tags = ["Audio Reactive", "Visualizer", "Circular", "Interactive"]
+
+[render_targets.image]
+source = "image.glsl"
+bindings = [
+    { channel = 0, type = "audio", stream = "iChannel0.mp3" }
+]

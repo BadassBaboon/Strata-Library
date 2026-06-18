@@ -1,0 +1,11 @@
+[wallpaper]
+name = "Clearly a Bug"
+author = "mrange"
+source_url = "https://www.shadertoy.com/view/33cGDj"
+version = "1.0.0"
+passes = ["image"]
+tags = ["Abstract", "Organic", "Creature", "Animated"]
+
+[render_targets.image]
+source = "image.glsl"
+bindings = []

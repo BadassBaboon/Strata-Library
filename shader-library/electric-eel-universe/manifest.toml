@@ -1,0 +1,11 @@
+[wallpaper]
+name = "Electric Eel Universe"
+author = "mrange"
+source_url = "https://www.shadertoy.com/view/cdV3DW"
+version = "1.0.0"
+passes = ["image"]
+tags = ["Space", "Electric", "Abstract"]
+
+[render_targets.image]
+source = "image.glsl"
+bindings = []

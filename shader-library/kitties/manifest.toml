@@ -1,0 +1,11 @@
+[wallpaper]
+name = "Kitties"
+author = "Xibanya"
+source_url = "https://www.shadertoy.com/view/7lcyz8"
+version = "1.0.0"
+passes = ["image"]
+tags = ["Animals", "Cute", "Kitties"]
+
+[render_targets.image]
+source = "image.glsl"
+bindings = []

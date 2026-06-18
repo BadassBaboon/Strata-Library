@@ -1,0 +1,11 @@
+[wallpaper]
+name = "Saturday Torus"
+author = "mrange"
+source_url = "https://www.shadertoy.com/view/fd33zn"
+version = "1.0.0"
+passes = ["image"]
+tags = ["Torus", "Geometric", "3D", "Abstract"]
+
+[render_targets.image]
+source = "image.glsl"
+bindings = []

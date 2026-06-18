@@ -1,0 +1,17 @@
+[wallpaper]
+name = "1D Radial Lightmap"
+author = "Flyguy"
+source_url = "https://www.shadertoy.com/view/XsK3RR"
+version = "1.0.0"
+passes = ["bufferA", "image"]
+tags = ["Lighting", "Interactive", "2D", "Abstract"]
+
+[render_targets.bufferA]
+source = "bufferA.glsl"
+bindings = []
+
+[render_targets.image]
+source = "image.glsl"
+bindings = [
+    { channel = 0, type = "buffer", target = "bufferA" }
+]

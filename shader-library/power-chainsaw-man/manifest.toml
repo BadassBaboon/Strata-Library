@@ -1,0 +1,13 @@
+[wallpaper]
+name = "Power Chainsaw Man"
+author = "panna_pudi"
+source_url = "https://www.shadertoy.com/view/cljGR3"
+version = "1.0.0"
+passes = ["image"]
+tags = ["Anime", "Chainsaw Man", "Audio Reactive"]
+
+[render_targets.image]
+source = "image.glsl"
+bindings = [
+    { channel = 3, type = "audio", stream = "iChannel3.mp3" }
+]

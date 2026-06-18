@@ -1,0 +1,11 @@
+[wallpaper]
+name = "Squares Background v2"
+author = "vamoss"
+source_url = "https://www.shadertoy.com/view/MdVXzw"
+version = "1.0.0"
+passes = ["image"]
+tags = ["Geometric", "Minimal", "Blue", "Background"]
+
+[render_targets.image]
+source = "image.glsl"
+bindings = []

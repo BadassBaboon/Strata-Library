@@ -1,0 +1,13 @@
+[wallpaper]
+name = "Neonwave Sunrise"
+author = "mrange"
+source_url = "https://www.shadertoy.com/view/7dyyRy"
+version = "1.0.0"
+passes = ["image"]
+tags = ["Retro", "Synthwave", "Sunrise", "Audio Reactive"]
+
+[render_targets.image]
+source = "image.glsl"
+bindings = [
+    { channel = 0, type = "audio", stream = "iChannel0.mp3" }
+]

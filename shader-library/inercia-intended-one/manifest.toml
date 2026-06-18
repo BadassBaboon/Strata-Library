@@ -1,0 +1,13 @@
+[wallpaper]
+name = "Inercia Intended One"
+author = "0b5vr"
+source_url = "https://www.shadertoy.com/view/cs2GWD"
+version = "1.0.0"
+passes = ["image"]
+tags = ["Audio Reactive", "Demoscene", "3D", "Abstract"]
+
+[render_targets.image]
+source = "image.glsl"
+bindings = [
+    { channel = 0, type = "audio", stream = "iChannel0.mp3" }
+]

@@ -1,0 +1,21 @@
+[wallpaper]
+name = "Audio Visualizer"
+author = "pixartist"
+source_url = "https://www.shadertoy.com/view/lscXzN"
+version = "1.0.0"
+passes = ["bufferA", "image"]
+tags = ["Audio Reactive", "Visualizer", "Feedback", "Colorful"]
+
+[render_targets.bufferA]
+source = "bufferA.glsl"
+double_buffered = true
+bindings = [
+    { channel = 0, type = "audio", stream = "iChannel0.mp3" },
+    { channel = 1, type = "buffer", target = "bufferA" }
+]
+
+[render_targets.image]
+source = "image.glsl"
+bindings = [
+    { channel = 0, type = "buffer", target = "bufferA" }
+]

@@ -1,0 +1,11 @@
+[wallpaper]
+name = "Retro Sun"
+author = "FraglessPlayer"
+source_url = "https://www.shadertoy.com/view/4dcyW7"
+version = "1.0.0"
+passes = ["image"]
+tags = ["Retro", "Synthwave", "Sunset", "Sun"]
+
+[render_targets.image]
+source = "image.glsl"
+bindings = []

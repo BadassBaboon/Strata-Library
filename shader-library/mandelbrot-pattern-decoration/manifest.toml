@@ -1,0 +1,11 @@
+[wallpaper]
+name = "Mandelbrot Pattern"
+author = "Shane"
+source_url = "https://www.shadertoy.com/view/ttscWn"
+version = "1.0.0"
+passes = ["image"]
+tags = ["Fractal", "Mandelbrot", "Mathematical"]
+
+[render_targets.image]
+source = "image.glsl"
+bindings = []

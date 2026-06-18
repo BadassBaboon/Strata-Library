@@ -1,0 +1,11 @@
+[wallpaper]
+name = "Coastal Landscape"
+author = "bitless"
+source_url = "https://www.shadertoy.com/view/fstyD4"
+version = "1.0.0"
+passes = ["image"]
+tags = ["Landscape", "Nature", "Water"]
+
+[render_targets.image]
+source = "image.glsl"
+bindings = []

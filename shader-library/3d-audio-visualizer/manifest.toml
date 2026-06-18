@@ -1,0 +1,13 @@
+[wallpaper]
+name = "3D Audio Visualizer"
+author = "kishimisu"
+source_url = "https://www.shadertoy.com/view/dtl3Dr"
+version = "1.0.0"
+passes = ["image"]
+tags = ["Audio Reactive", "3D", "Visualizer"]
+
+[render_targets.image]
+source = "image.glsl"
+bindings = [
+    { channel = 0, type = "audio", stream = "iChannel0.mp3" }
+]

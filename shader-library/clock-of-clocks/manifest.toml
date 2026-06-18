@@ -1,0 +1,11 @@
+[wallpaper]
+name = "Clock of Clocks"
+author = "msingdahl"
+source_url = "https://www.shadertoy.com/view/ws2XRd"
+version = "1.0.0"
+passes = ["image"]
+tags = ["Clock", "Minimal", "Time"]
+
+[render_targets.image]
+source = "image.glsl"
+bindings = []

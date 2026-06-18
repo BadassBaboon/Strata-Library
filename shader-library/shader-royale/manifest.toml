@@ -1,0 +1,20 @@
+[wallpaper]
+name = "Shader Royale"
+author = "NuSan"
+source_url = "https://www.shadertoy.com/view/3l3Bzl"
+version = "1.0.0"
+passes = ["bufferA", "image"]
+tags = ["Abstract", "Feedback", "Colorful", "Animated"]
+
+[render_targets.bufferA]
+source = "bufferA.glsl"
+double_buffered = true
+bindings = [
+    { channel = 0, type = "buffer", target = "bufferA" }
+]
+
+[render_targets.image]
+source = "image.glsl"
+bindings = [
+    { channel = 0, type = "buffer", target = "bufferA" }
+]

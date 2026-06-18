@@ -1,0 +1,11 @@
+[wallpaper]
+name = "Electro Cardiogram"
+author = "Loewe"
+source_url = "https://www.shadertoy.com/view/XsyGzD"
+version = "1.0.0"
+passes = ["image"]
+tags = ["Minimal", "Line", "Animated", "Medical"]
+
+[render_targets.image]
+source = "image.glsl"
+bindings = []

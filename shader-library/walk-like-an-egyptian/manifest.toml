@@ -1,0 +1,11 @@
+[wallpaper]
+name = "Walk Like an Egyptian"
+author = "XT95"
+source_url = "https://www.shadertoy.com/view/msjGzw"
+version = "1.0.0"
+passes = ["image"]
+tags = ["Raymarching", "3D", "Scene", "Egyptian"]
+
+[render_targets.image]
+source = "image.glsl"
+bindings = []

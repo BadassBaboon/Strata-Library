@@ -1,0 +1,13 @@
+[wallpaper]
+name = "Basic Audio Visualizer"
+author = "Lallis"
+source_url = "https://www.shadertoy.com/view/4lGSzy"
+version = "1.0.0"
+passes = ["image"]
+tags = ["Audio Reactive", "Visualizer", "Minimal"]
+
+[render_targets.image]
+source = "image.glsl"
+bindings = [
+    { channel = 0, type = "audio", stream = "iChannel0.mp3" }
+]

@@ -1,0 +1,11 @@
+[wallpaper]
+name = "Nixie Tube Clock"
+author = "picoplanetdev"
+source_url = "https://www.shadertoy.com/view/Dds3WB"
+version = "1.0.0"
+passes = ["image"]
+tags = ["Clock", "Retro", "Nixie"]
+
+[render_targets.image]
+source = "image.glsl"
+bindings = []

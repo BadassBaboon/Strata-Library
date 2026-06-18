@@ -1,0 +1,11 @@
+[wallpaper]
+name = "Full Spectrum Cyber"
+author = "Kali"
+source_url = "https://www.shadertoy.com/view/XcXXzS"
+version = "1.0.0"
+passes = ["image"]
+tags = ["Cyber", "Neon", "Fractal", "Abstract"]
+
+[render_targets.image]
+source = "image.glsl"
+bindings = []

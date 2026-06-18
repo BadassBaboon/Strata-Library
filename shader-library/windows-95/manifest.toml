@@ -1,0 +1,11 @@
+[wallpaper]
+name = "Windows 95"
+author = "ungzd"
+source_url = "https://www.shadertoy.com/view/XstXR2"
+version = "1.0.0"
+passes = ["image"]
+tags = ["Retro", "Nostalgia", "Minimal", "Abstract"]
+
+[render_targets.image]
+source = "image.glsl"
+bindings = []

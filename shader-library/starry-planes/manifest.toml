@@ -1,0 +1,11 @@
+[wallpaper]
+name = "Starry Planes"
+author = "mrange"
+source_url = "https://www.shadertoy.com/view/MfjyWK"
+version = "1.0.0"
+passes = ["image"]
+tags = ["Space", "Stars", "Abstract", "Psychedelic"]
+
+[render_targets.image]
+source = "image.glsl"
+bindings = []

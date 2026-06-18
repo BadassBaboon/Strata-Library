@@ -1,0 +1,12 @@
+[wallpaper]
+name = "Blue Red Shiny 2"
+author = "diatribes"
+source_url = "https://www.shadertoy.com/view/7cjGRR"
+version = "1.0.0"
+passes = ["image"]
+tags = ["Abstract", "Shiny", "Colorful"]
+
+[render_targets.image]
+source = "image.glsl"
+double_buffered = false
+bindings = []

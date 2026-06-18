@@ -1,0 +1,20 @@
+[wallpaper]
+name = "Clock Time"
+author = "byt3_m3chanic"
+source_url = "https://www.shadertoy.com/view/tX2XDh"
+version = "1.0.0"
+passes = ["bufferA", "image"]
+tags = ["Clock", "Digital", "Time"]
+
+[render_targets.bufferA]
+source = "bufferA.glsl"
+double_buffered = true
+bindings = [
+    { channel = 0, type = "buffer", target = "bufferA" }
+]
+
+[render_targets.image]
+source = "image.glsl"
+bindings = [
+    { channel = 0, type = "buffer", target = "bufferA" }
+]

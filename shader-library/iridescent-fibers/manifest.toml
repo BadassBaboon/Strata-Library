@@ -1,0 +1,11 @@
+[wallpaper]
+name = "Iridescent Fibers"
+author = "evesira"
+source_url = "https://www.shadertoy.com/view/tffSDr"
+version = "1.0.0"
+passes = ["image"]
+tags = ["Iridescent", "Abstract", "Organic", "Colorful"]
+
+[render_targets.image]
+source = "image.glsl"
+bindings = []
