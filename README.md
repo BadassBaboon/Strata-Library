@@ -114,11 +114,11 @@ cargo test -p core-engine --test assemble_library -- --ignored
 Published via **jsDelivr**, served straight off this repo's Git tags (no release `.zip` needed):
 
 ```
-https://cdn.jsdelivr.net/gh/BadassBaboon/Strata-Library@library-v1.0.0/index.toml
-https://cdn.jsdelivr.net/gh/BadassBaboon/Strata-Library@library-v1.0.0/shader-library/<slug>/thumbnail.png
+https://cdn.jsdelivr.net/gh/BadassBaboon/Strata-Library@library-vx.x.x/index.toml
+https://cdn.jsdelivr.net/gh/BadassBaboon/Strata-Library@library-vx.x.x/shader-library/<slug>/thumbnail.png
 ```
 
-Always pin an explicit tag (`@library-v1.0.0`), **never `@latest`** — tagged content is cached immutably, so a given engine build always resolves a known-good snapshot. To publish: commit, `git tag library-v<version>`, push the tag.
+We always pin an explicit tag such as (`@library-v1.0.0`), **never `@latest`** — tagged content is cached immutably, so a given engine build always resolves a known-good snapshot. To publish: we commit, `git tag library-v<version>`, push the tag.
 
 ---
 
