@@ -1,0 +1,14 @@
+[wallpaper]
+name = "Voronoi Blocks"
+author = "ParaBellum"
+version = "1.0.0"
+source_url = "https://www.shadertoy.com/view/WtXSz2"
+tags = ["2d", "voronoi", "light", "polygon"]
+passes = ["image"]
+
+[render_targets.image]
+source = "image.glsl"
+bindings = [
+    { channel = 0, type = "cubemap", path = "0681c014f6c88c356cf9c0394ffe015acc94ec1474924855f45d22c3e70b5785.png" }
+]
+

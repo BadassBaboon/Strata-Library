@@ -1,0 +1,12 @@
+[wallpaper]
+name = "Interesting Patterns"
+author = "Johnrobmiller"
+version = "1.0.0"
+source_url = "https://www.shadertoy.com/view/mdBSRt"
+tags = ["2d", "cineshader"]
+passes = ["image"]
+
+[render_targets.image]
+source = "image.glsl"
+bindings = []
+

@@ -1,0 +1,14 @@
+[wallpaper]
+name = "Favela"
+author = "duvengar"
+version = "1.0.0"
+source_url = "https://www.shadertoy.com/view/ldGcDh"
+tags = ["2d", "isometric", "tiling", "hexagons"]
+passes = ["image"]
+
+[render_targets.image]
+source = "image.glsl"
+bindings = [
+    { channel = 0, type = "audio" }
+]
+

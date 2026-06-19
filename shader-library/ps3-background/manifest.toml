@@ -1,0 +1,12 @@
+[wallpaper]
+name = "PS3 Background"
+author = "llmciv"
+version = "1.0.0"
+source_url = "https://www.shadertoy.com/view/fcf3Dn"
+tags = ["ps3", "playstation", "ps3home"]
+passes = ["image"]
+
+[render_targets.image]
+source = "image.glsl"
+bindings = []
+

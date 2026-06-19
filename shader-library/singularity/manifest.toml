@@ -1,0 +1,12 @@
+[wallpaper]
+name = "Singularity"
+author = "Xor"
+version = "1.0.0"
+source_url = "https://www.shadertoy.com/view/3csSWB"
+tags = ["space", "golf", "interstellar"]
+passes = ["image"]
+
+[render_targets.image]
+source = "image.glsl"
+bindings = []
+

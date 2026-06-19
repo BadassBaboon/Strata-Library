@@ -1,0 +1,12 @@
+[wallpaper]
+name = "DVD Bounce"
+author = "berelium"
+version = "1.0.0"
+source_url = "https://www.shadertoy.com/view/M3G3DV"
+tags = ["waves", "DVD"]
+passes = ["image"]
+
+[render_targets.image]
+source = "image.glsl"
+bindings = []
+

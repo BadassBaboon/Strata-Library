@@ -1,0 +1,23 @@
+[wallpaper]
+name = "Chillwave Planet"
+author = "z0rg"
+version = "1.0.0"
+source_url = "https://www.shadertoy.com/view/ftV3zK"
+tags = ["zef", "planet"]
+passes = ["bufferA", "image"]
+
+[render_targets.bufferA]
+source = "bufferA.glsl"
+bindings = [
+    { channel = 0, type = "buffer", target = "bufferA" },
+    { channel = 1, type = "texture", path = "92d7758c402f0927011ca8d0a7e40251439fba3a1dac26f5b8b62026323501aa.jpg" },
+    { channel = 2, type = "texture", path = "0c7bf5fe9462d5bffbd11126e82908e39be3ce56220d900f633d58fb432e56f5.png" },
+    { channel = 3, type = "audio" }
+]
+
+[render_targets.image]
+source = "image.glsl"
+bindings = [
+    { channel = 0, type = "buffer", target = "bufferA" }
+]
+

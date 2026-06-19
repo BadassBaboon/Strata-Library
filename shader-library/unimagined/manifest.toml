@@ -1,0 +1,12 @@
+[wallpaper]
+name = "Unimagined"
+author = "OldEclipse"
+version = "1.0.0"
+source_url = "https://www.shadertoy.com/view/NflSD8"
+tags = ["lines", "spheres", "volumetric"]
+passes = ["image"]
+
+[render_targets.image]
+source = "image.glsl"
+bindings = []
+

@@ -2,7 +2,7 @@
 
 > The shared content library for **[Strata](https://github.com/BadassBaboon/Strata)** — the hyper-lightweight Rust + `wgpu` live-wallpaper engine.
 
-Strata's engine ships with **no** shaders, models, or presets baked in. Instead it fetches this library on first launch and re-syncs on demand. Keeping content here keeps the engine repo small and license-clean, and lets the community add wallpapers via pull request without ever touching engine code.
+Strata's engine ships with **no** shaders, thumbnails, or wallpaper textures baked in. Instead it fetches this library on first launch and re-syncs on demand. Keeping content here keeps the engine repo small and license-clean, and lets the community add wallpapers via pull request without ever touching engine code.
 
 ---
 
@@ -11,8 +11,6 @@ Strata's engine ships with **no** shaders, models, or presets baked in. Instead 
 ```
 Strata-Library/
 ├── index.toml                  # GENERATED manifest: schema/library version + per-item hashes
-├── models.toml                 # Parallax-Studio depth/segment/upscale model registry
-├── presets.toml                # Parallax-Studio quality presets
 ├── update-index.ps1            # regenerates index.toml (contributor tool — see below)
 ├── external/                   # shared texture & cubemap assets (referenced by file name)
 │   └── <sha>.png / <sha>.jpg   # cubemaps add 5 sibling faces <sha>_1..<sha>_5
@@ -36,13 +34,6 @@ A wallpaper folder is **self-contained**: zip it and it's a complete, importable
 ```toml
 schema_version = 1
 library_version = "1.0.0"
-
-[files.models]      # version bumps + hash refreshes when models.toml changes
-version = "1.0.0"
-sha256  = "…"
-[files.presets]
-version = "1.0.0"
-sha256  = "…"
 
 [[shader]]
 slug       = "clearly-a-bug"
@@ -83,8 +74,7 @@ It scans every `shader-library/<slug>/manifest.toml`, content-hashes each shader
 
 * **new** folders → added, `updated` = today;
 * **changed** shaders → `updated` re-dated, `sha256` refreshed (`added_in` preserved);
-* **removed** folders → dropped;
-* `models.toml` / `presets.toml` → hashes refreshed.
+* **removed** folders → dropped.
 
 It also warns about a missing `name` / `author` / `source_url` / `thumbnail.png`, but it does **not** render thumbnails — include your own, or let the app make one at runtime.
 
@@ -99,26 +89,30 @@ git tag library-v1.1.0 && git push origin library-v1.1.0
 
 Only `-Release` (or `-Version`) bumps `library_version` and turns the pending `unreleased` shaders into the real version. If a PR's `index.toml` ever conflicts on merge, just re-run the script — it rebuilds the index from the folders on disk.
 
-### Engine tool — for maintainers regenerating thumbnails too
+### Thumbnails
 
-To regenerate the index **and re-render every `thumbnail.png`** (needs a GPU), clone this repo inside a checkout of the main Strata repo and run:
-
-```
-cargo test -p core-engine --test assemble_library -- --ignored
-```
+`update-index.ps1` does **not** render thumbnails (no GPU). Each shader folder
+should ship its own `thumbnail.png` (480×270) — the easiest way to get one is to
+import the shader into the Strata app, which generates it. If a shader has no
+thumbnail, the app renders one at runtime into the user's local copy, but shipping
+it in the repo means everyone sees a preview immediately.
 
 ---
 
 ## 📦 Distribution
 
-Published via **jsDelivr**, served straight off this repo's Git tags (no release `.zip` needed):
+Distributed straight off this repo's Git tags — no release `.zip` to upload. The engine:
 
-```
-https://cdn.jsdelivr.net/gh/BadassBaboon/Strata-Library@library-vx.x.x/index.toml
-https://cdn.jsdelivr.net/gh/BadassBaboon/Strata-Library@library-vx.x.x/shader-library/<slug>/thumbnail.png
-```
+1. **Discovers the newest version** by querying the GitHub tags API and picking the highest `library-v*` tag:
+   ```
+   https://api.github.com/repos/BadassBaboon/Strata-Library/tags
+   ```
+2. **Downloads that tag's snapshot** as a zipball from codeload and extracts it into `%APPDATA%/strata/strata-library/`:
+   ```
+   https://codeload.github.com/BadassBaboon/Strata-Library/zip/refs/tags/library-v<version>
+   ```
 
-We always pin an explicit tag (`@library-v1.0.0`), **never `@latest`** — tagged content is cached immutably, so a given engine build always resolves a known-good snapshot. To publish we commit, `git tag library-v<version>`, push the tag.
+Because discovery is dynamic, **pushing a new `library-v*` tag is all it takes** for every installed engine to offer the update — no engine rebuild needed. To publish: commit, `git tag library-v<version>`, push the tag.
 
 ---
 

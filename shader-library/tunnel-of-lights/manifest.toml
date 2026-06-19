@@ -1,0 +1,12 @@
+[wallpaper]
+name = "Tunnel Of Lights"
+author = "nocrex"
+version = "1.0.0"
+source_url = "https://www.shadertoy.com/view/w3KGRK"
+tags = ["raymarching"]
+passes = ["image"]
+
+[render_targets.image]
+source = "image.glsl"
+bindings = []
+

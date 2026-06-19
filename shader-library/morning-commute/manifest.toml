@@ -1,0 +1,35 @@
+[wallpaper]
+name = "Morning Commute"
+author = "XT95"
+version = "1.0.0"
+source_url = "https://www.shadertoy.com/view/wdKBz1"
+tags = ["godrays", "train"]
+passes = ["bufferA", "bufferB", "bufferC", "image"]
+
+[render_targets.bufferA]
+source = "bufferA.glsl"
+bindings = [
+    { channel = 0, type = "buffer", target = "bufferA" },
+    { channel = 1, type = "texture", path = "cb49c003b454385aa9975733aff4571c62182ccdda480aaba9a8d250014f00ec.png" }
+]
+
+[render_targets.bufferB]
+source = "bufferB.glsl"
+bindings = [
+    { channel = 0, type = "buffer", target = "bufferA" }
+]
+
+[render_targets.bufferC]
+source = "bufferC.glsl"
+bindings = [
+    { channel = 0, type = "buffer", target = "bufferA" }
+]
+
+[render_targets.image]
+source = "image.glsl"
+bindings = [
+    { channel = 0, type = "buffer", target = "bufferC" },
+    { channel = 1, type = "buffer", target = "bufferB" },
+    { channel = 2, type = "audio" }
+]
+

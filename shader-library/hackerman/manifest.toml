@@ -1,0 +1,12 @@
+[wallpaper]
+name = "Hackerman"
+author = "movAX13h"
+version = "1.0.0"
+source_url = "https://www.shadertoy.com/view/4dcGRn"
+tags = ["hackerman"]
+passes = ["image"]
+
+[render_targets.image]
+source = "image.glsl"
+bindings = []
+

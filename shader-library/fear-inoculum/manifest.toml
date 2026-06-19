@@ -1,0 +1,24 @@
+[wallpaper]
+name = "Fear Inoculum"
+author = "RagePly"
+version = "1.0.0"
+source_url = "https://www.shadertoy.com/view/cdSGRw"
+tags = ["raymarch", "helix", "cover", "reproduction"]
+passes = ["bufferA", "bufferB", "image"]
+
+[render_targets.bufferA]
+source = "bufferA.glsl"
+bindings = []
+
+[render_targets.bufferB]
+source = "bufferB.glsl"
+bindings = [
+    { channel = 0, type = "buffer", target = "bufferA" }
+]
+
+[render_targets.image]
+source = "image.glsl"
+bindings = [
+    { channel = 0, type = "buffer", target = "bufferB" }
+]
+

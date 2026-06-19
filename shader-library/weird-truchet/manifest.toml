@@ -1,0 +1,12 @@
+[wallpaper]
+name = "Weird Truchet"
+author = "byt3_m3chanic"
+version = "1.0.0"
+source_url = "https://www.shadertoy.com/view/4ccfRn"
+tags = ["2d"]
+passes = ["image"]
+
+[render_targets.image]
+source = "image.glsl"
+bindings = []
+

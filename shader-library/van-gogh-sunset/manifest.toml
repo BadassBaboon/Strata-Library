@@ -1,0 +1,12 @@
+[wallpaper]
+name = "Van Gogh Sunset"
+author = "noztol"
+version = "1.0.0"
+source_url = "https://www.shadertoy.com/view/fXlXWN"
+tags = ["2d", "sunset", "beach", "islands"]
+passes = ["image"]
+
+[render_targets.image]
+source = "image.glsl"
+bindings = []
+

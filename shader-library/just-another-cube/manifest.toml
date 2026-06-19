@@ -1,0 +1,12 @@
+[wallpaper]
+name = "Just Another Cube"
+author = "mrange"
+version = "1.0.0"
+source_url = "https://www.shadertoy.com/view/3XdXRr"
+tags = ["glow", "cube"]
+passes = ["image"]
+
+[render_targets.image]
+source = "image.glsl"
+bindings = []
+

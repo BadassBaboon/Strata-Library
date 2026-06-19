@@ -1,0 +1,20 @@
+[wallpaper]
+name = "MacOS Monterey"
+author = "vincentdchan"
+version = "1.0.0"
+source_url = "https://www.shadertoy.com/view/7tGfWm"
+tags = ["wave", "macos", "monterey"]
+passes = ["bufferA", "image"]
+
+[render_targets.bufferA]
+source = "bufferA.glsl"
+bindings = [
+    { channel = 0, type = "buffer", target = "bufferA" }
+]
+
+[render_targets.image]
+source = "image.glsl"
+bindings = [
+    { channel = 0, type = "buffer", target = "bufferA" }
+]
+

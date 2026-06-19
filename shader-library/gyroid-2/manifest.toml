@@ -1,0 +1,12 @@
+[wallpaper]
+name = "Gyroid 2"
+author = "tubeman"
+version = "1.0.0"
+source_url = "https://www.shadertoy.com/view/tXtyW8"
+tags = ["gyroid"]
+passes = ["image"]
+
+[render_targets.image]
+source = "image.glsl"
+bindings = []
+

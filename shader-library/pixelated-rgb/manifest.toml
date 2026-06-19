@@ -1,0 +1,12 @@
+[wallpaper]
+name = "Pixelated RGB"
+author = "reyemxela"
+version = "1.0.0"
+source_url = "https://www.shadertoy.com/view/wscGWl"
+tags = ["pixel", "rgb"]
+passes = ["image"]
+
+[render_targets.image]
+source = "image.glsl"
+bindings = []
+

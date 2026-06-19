@@ -1,0 +1,12 @@
+[wallpaper]
+name = "Cyberspace Data Warehouse"
+author = "bitless"
+version = "1.0.0"
+source_url = "https://www.shadertoy.com/view/NlK3Wt"
+tags = ["2d", "grid", "hexagonal", "cyberspace"]
+passes = ["image"]
+
+[render_targets.image]
+source = "image.glsl"
+bindings = []
+

@@ -1,0 +1,14 @@
+[wallpaper]
+name = "The Legend of Zelda"
+author = "HLorenzi"
+version = "1.0.0"
+source_url = "https://www.shadertoy.com/view/4sjGD1"
+tags = ["2d", "nes", "zelda"]
+passes = ["image"]
+
+[render_targets.image]
+source = "image.glsl"
+bindings = [
+    { channel = 0, type = "audio" }
+]
+

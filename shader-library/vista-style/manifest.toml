@@ -1,0 +1,12 @@
+[wallpaper]
+name = "Visa Style"
+author = "Nanerbeet"
+version = "1.0.0"
+source_url = "https://www.shadertoy.com/view/Xf2XWt"
+tags = ["gradient", "background", "vista"]
+passes = ["image"]
+
+[render_targets.image]
+source = "image.glsl"
+bindings = []
+

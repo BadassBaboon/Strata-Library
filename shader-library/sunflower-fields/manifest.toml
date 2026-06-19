@@ -1,0 +1,12 @@
+[wallpaper]
+name = "Sunflower Fields"
+author = "noztol"
+version = "1.0.0"
+source_url = "https://www.shadertoy.com/view/NXlXD4"
+tags = ["2d", "landscape", "vangogh"]
+passes = ["image"]
+
+[render_targets.image]
+source = "image.glsl"
+bindings = []
+

@@ -1,0 +1,12 @@
+[wallpaper]
+name = "Moon"
+author = "Antoine54652"
+version = "1.0.0"
+source_url = "https://www.shadertoy.com/view/7sG3Wh"
+tags = ["moon"]
+passes = ["image"]
+
+[render_targets.image]
+source = "image.glsl"
+bindings = []
+

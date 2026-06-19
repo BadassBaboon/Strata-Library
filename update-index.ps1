@@ -5,17 +5,14 @@
 .DESCRIPTION
   The contributor workflow. Scans shader-library/<slug>/manifest.toml, hashes
   each shader's authored content, and rewrites index.toml:
-    * NEW shader folders     -> added with added_in = <new version>, updated = today
-    * CHANGED shaders        -> updated = today (added_in preserved), sha refreshed
-    * REMOVED folders        -> dropped from the index
-    * models.toml/presets.toml -> hash refreshed; their version bumps when changed
+    * NEW shader folders -> added with added_in = <new version>, updated = today
+    * CHANGED shaders     -> updated = today (added_in preserved), sha refreshed
+    * REMOVED folders     -> dropped from the index
   Then, if anything changed, it asks for the new library_version (or pass -Version).
 
   Needs nothing but PowerShell (built into Windows) - no Rust, no engine checkout,
   no GPU. It does NOT render thumbnails: add your own thumbnail.png to the folder,
-  or let the Strata app generate one at runtime. (Maintainers can regenerate this
-  index AND all thumbnails from the engine repo with:
-     cargo test -p core-engine --test assemble_library -- --ignored)
+  or let the Strata app generate one at runtime.
 
 .PARAMETER Version
   The new library_version to stamp (e.g. 1.1.0). If omitted and content changed,
@@ -56,10 +53,6 @@ if (-not (Test-Path 'shader-library')) {
 
 function Get-TomlString([string]$s) {
     '"' + ($s -replace '\\', '\\' -replace '"', '\"') + '"'
-}
-
-function Get-Sha256OfFile([string]$path) {
-    (Get-FileHash -LiteralPath $path -Algorithm SHA256).Hash.ToLower()
 }
 
 # Hash a shader's AUTHORED files (manifest.toml + *.glsl), sorted by name. Matches
@@ -110,28 +103,15 @@ function Suggest-Bump([string]$v) {
     "$maj.$($min + 1).0"
 }
 
-# --- read the existing index.toml (prior versions / hashes) --------------------
+# --- read the existing index.toml (prior version + per-shader state) -----------
 
-$prevShaders       = @{}
-$prevVersion       = '1.0.0'
-$prevModelsVer     = '1.0.0'; $prevModelsSha  = ''
-$prevPresetsVer    = '1.0.0'; $prevPresetsSha = ''
+$prevShaders = @{}
+$prevVersion = '1.0.0'
 
 if (Test-Path 'index.toml') {
     $idx = Get-Content 'index.toml' -Raw
     $vm = [regex]::Match($idx, '(?m)^\s*library_version\s*=\s*"(.*?)"')
     if ($vm.Success) { $prevVersion = $vm.Groups[1].Value }
-
-    $mb = [regex]::Match($idx, '(?s)\[files\.models\](.*?)(?=\r?\n\[|\Z)')
-    if ($mb.Success) {
-        $prevModelsVer = [regex]::Match($mb.Groups[1].Value, '(?m)^\s*version\s*=\s*"(.*?)"').Groups[1].Value
-        $prevModelsSha = [regex]::Match($mb.Groups[1].Value, '(?m)^\s*sha256\s*=\s*"(.*?)"').Groups[1].Value
-    }
-    $pb = [regex]::Match($idx, '(?s)\[files\.presets\](.*?)(?=\r?\n\[|\Z)')
-    if ($pb.Success) {
-        $prevPresetsVer = [regex]::Match($pb.Groups[1].Value, '(?m)^\s*version\s*=\s*"(.*?)"').Groups[1].Value
-        $prevPresetsSha = [regex]::Match($pb.Groups[1].Value, '(?m)^\s*sha256\s*=\s*"(.*?)"').Groups[1].Value
-    }
     foreach ($blk in [regex]::Matches($idx, '(?s)\[\[shader\]\](.*?)(?=\r?\n\[\[shader\]\]|\Z)')) {
         $b = $blk.Groups[1].Value
         $slug = [regex]::Match($b, '(?m)^\s*slug\s*=\s*"(.*?)"').Groups[1].Value
@@ -183,13 +163,7 @@ foreach ($d in $dirs) {
 
 $removed = @($prevShaders.Keys | Where-Object { $_ -notin ($shaders | ForEach-Object slug) })
 
-# models / presets
-$modelsSha  = if (Test-Path 'models.toml')  { Get-Sha256OfFile 'models.toml' }  else { '' }
-$presetsSha = if (Test-Path 'presets.toml') { Get-Sha256OfFile 'presets.toml' } else { '' }
-$modelsChanged  = ($modelsSha  -ne $prevModelsSha)
-$presetsChanged = ($presetsSha -ne $prevPresetsSha)
-
-$changed = ($added.Count -or $updated.Count -or $removed.Count -or $modelsChanged -or $presetsChanged)
+$changed = ($added.Count -or $updated.Count -or $removed.Count)
 
 # --- report --------------------------------------------------------------------
 
@@ -199,8 +173,6 @@ Write-Host "  shaders found : $($shaders.Count)"
 if ($added.Count)   { Write-Host "  added         : $($added -join ', ')"   -ForegroundColor Green }
 if ($updated.Count) { Write-Host "  changed       : $($updated -join ', ')" -ForegroundColor Yellow }
 if ($removed.Count) { Write-Host "  removed       : $($removed -join ', ')" -ForegroundColor Red }
-if ($modelsChanged)  { Write-Host "  models.toml   : changed" -ForegroundColor Yellow }
-if ($presetsChanged) { Write-Host "  presets.toml  : changed" -ForegroundColor Yellow }
 
 # --- decide the version --------------------------------------------------------
 # Contributors (default) NEVER change library_version: new shaders are marked
@@ -225,13 +197,9 @@ if ($releaseMode) {
     }
     # Brand-new and any pending "unreleased" shaders adopt the release version.
     foreach ($s in $shaders) { if ($s.addedIn -eq '<NEW>' -or $s.addedIn -eq 'unreleased') { $s.addedIn = $newVersion } }
-    $modelsVer  = if ($modelsChanged)  { $newVersion } elseif ($prevModelsVer)  { $prevModelsVer }  else { $newVersion }
-    $presetsVer = if ($presetsChanged) { $newVersion } elseif ($prevPresetsVer) { $prevPresetsVer } else { $newVersion }
 } else {
     $newVersion = $prevVersion
     foreach ($s in $shaders) { if ($s.addedIn -eq '<NEW>') { $s.addedIn = 'unreleased' } }
-    $modelsVer  = if ($prevModelsVer)  { $prevModelsVer }  else { $newVersion }
-    $presetsVer = if ($prevPresetsVer) { $prevPresetsVer } else { $newVersion }
     if ($added.Count) {
         Write-Host "`nNew shaders marked 'unreleased'. The maintainer will assign a version with -Release." -ForegroundColor Cyan
     }
@@ -240,22 +208,11 @@ if ($releaseMode) {
 # --- write index.toml ----------------------------------------------------------
 
 $sb = New-Object System.Text.StringBuilder
-[void]$sb.AppendLine('# Strata-Library manifest - generated by update-index.ps1.')
+[void]$sb.AppendLine('# Strata-Library manifest - generated by update-index.ps1 (do NOT hand-edit).')
 [void]$sb.AppendLine('# Re-run after adding/editing shaders:  .\update-index.ps1')
-[void]$sb.AppendLine('# Maintainers can regenerate this AND all thumbnails from the engine repo:')
-[void]$sb.AppendLine('#   cargo test -p core-engine --test assemble_library -- --ignored')
 [void]$sb.AppendLine('')
 [void]$sb.AppendLine('schema_version = 1')
 [void]$sb.AppendLine("library_version = $(Get-TomlString $newVersion)")
-[void]$sb.AppendLine('')
-[void]$sb.AppendLine('# Registry files (hash lets a client know when to re-fetch them).')
-[void]$sb.AppendLine('[files.models]')
-[void]$sb.AppendLine("version = $(Get-TomlString $modelsVer)")
-[void]$sb.AppendLine("sha256 = $(Get-TomlString $modelsSha)")
-[void]$sb.AppendLine('')
-[void]$sb.AppendLine('[files.presets]')
-[void]$sb.AppendLine("version = $(Get-TomlString $presetsVer)")
-[void]$sb.AppendLine("sha256 = $(Get-TomlString $presetsSha)")
 foreach ($s in $shaders) {
     [void]$sb.AppendLine('')
     [void]$sb.AppendLine('[[shader]]')

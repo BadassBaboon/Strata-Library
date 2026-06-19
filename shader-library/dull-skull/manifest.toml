@@ -1,0 +1,14 @@
+[wallpaper]
+name = "Dull Skull"
+author = "Katur"
+version = "1.0.0"
+source_url = "https://www.shadertoy.com/view/DlyyWR"
+tags = ["raymarching", "skeleton"]
+passes = ["image"]
+
+[render_targets.image]
+source = "image.glsl"
+bindings = [
+    { channel = 0, type = "cubemap", path = "585f9546c092f53ded45332b343144396c0b2d70d9965f585ebc172080d8aa58.jpg" }
+]
+

@@ -1,0 +1,12 @@
+[wallpaper]
+name = "Gentle Rings"
+author = "darknoon"
+version = "1.0.0"
+source_url = "https://www.shadertoy.com/view/3dlfWH"
+tags = ["rings"]
+passes = ["image"]
+
+[render_targets.image]
+source = "image.glsl"
+bindings = []
+

@@ -1,0 +1,12 @@
+[wallpaper]
+name = "Old Skool 3D Driving"
+author = "mattz"
+version = "1.0.0"
+source_url = "https://www.shadertoy.com/view/XtlGW4"
+tags = ["road", "fake3d", "muchtiny"]
+passes = ["image"]
+
+[render_targets.image]
+source = "image.glsl"
+bindings = []
+

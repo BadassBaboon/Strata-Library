@@ -1,0 +1,14 @@
+[wallpaper]
+name = "Super Mario Bros."
+author = "HLorenzi"
+version = "1.0.0"
+source_url = "https://www.shadertoy.com/view/Msj3zD"
+tags = ["sprite", "mario", "nes"]
+passes = ["image"]
+
+[render_targets.image]
+source = "image.glsl"
+bindings = [
+    { channel = 0, type = "audio" }
+]
+

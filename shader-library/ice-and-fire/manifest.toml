@@ -1,0 +1,12 @@
+[wallpaper]
+name = "Ice And Fire"
+author = "mattz"
+version = "1.0.0"
+source_url = "https://www.shadertoy.com/view/MdfBzl"
+tags = ["2d", "triangles", "soothing"]
+passes = ["image"]
+
+[render_targets.image]
+source = "image.glsl"
+bindings = []
+

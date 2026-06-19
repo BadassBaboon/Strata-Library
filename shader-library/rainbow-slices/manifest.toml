@@ -1,0 +1,12 @@
+[wallpaper]
+name = "Rainbow Slices"
+author = "fizzer"
+version = "1.0.0"
+source_url = "https://www.shadertoy.com/view/XdsGD4"
+tags = ["procedural", "raymarching", "rainbow", "colourful"]
+passes = ["image"]
+
+[render_targets.image]
+source = "image.glsl"
+bindings = []
+
