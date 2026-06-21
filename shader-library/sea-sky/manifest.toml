@@ -1,0 +1,12 @@
+[wallpaper]
+name = "Sea & Sky"
+author = "attefable"
+version = "1.0.0"
+source_url = "https://www.shadertoy.com/view/sXlSWl"
+tags = ["procedural", "waves", "clouds", "water"]
+passes = ["image"]
+
+[render_targets.image]
+source = "image.glsl"
+bindings = []
+

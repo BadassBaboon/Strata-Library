@@ -1,0 +1,12 @@
+[wallpaper]
+name = "Another Synthwave Sunset Thing"
+author = "stduhpf"
+version = "1.0.0"
+source_url = "https://www.shadertoy.com/view/tsScRK"
+tags = ["raymarching", "sunset", "synthwave"]
+passes = ["image"]
+
+[render_targets.image]
+source = "image.glsl"
+bindings = []
+

@@ -1,0 +1,39 @@
+[wallpaper]
+name = "Smoke On The Water (Mouse Interactive)"
+author = "yyf1994"
+version = "1.0.0"
+source_url = "https://www.shadertoy.com/view/wXsyWf"
+tags = ["simulation", "fluid", "mouse", "smoke"]
+passes = ["bufferA", "bufferB", "bufferC", "bufferD", "image"]
+
+[render_targets.bufferA]
+source = "bufferA.glsl"
+bindings = [
+    { channel = 0, type = "buffer", target = "bufferC", wrap = "clamp" }
+]
+
+[render_targets.bufferB]
+source = "bufferB.glsl"
+bindings = [
+    { channel = 0, type = "buffer", target = "bufferA", wrap = "clamp" }
+]
+
+[render_targets.bufferC]
+source = "bufferC.glsl"
+bindings = [
+    { channel = 0, type = "buffer", target = "bufferB", wrap = "clamp" }
+]
+
+[render_targets.bufferD]
+source = "bufferD.glsl"
+bindings = [
+    { channel = 0, type = "buffer", target = "bufferC", wrap = "clamp" },
+    { channel = 1, type = "buffer", target = "bufferD" }
+]
+
+[render_targets.image]
+source = "image.glsl"
+bindings = [
+    { channel = 0, type = "buffer", target = "bufferD" }
+]
+

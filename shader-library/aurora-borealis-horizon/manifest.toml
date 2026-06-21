@@ -1,0 +1,12 @@
+[wallpaper]
+name = "Aurora Borealis Horizon"
+author = "bdhwan"
+version = "1.0.0"
+source_url = "https://www.shadertoy.com/view/f3lSWn"
+tags = ["reflection", "gradient", "sky", "landscape", "aurora"]
+passes = ["image"]
+
+[render_targets.image]
+source = "image.glsl"
+bindings = []
+

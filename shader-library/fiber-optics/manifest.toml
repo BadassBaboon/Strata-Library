@@ -1,0 +1,12 @@
+[wallpaper]
+name = "Fiber Optics"
+author = "noztol"
+version = "1.0.0"
+source_url = "https://www.shadertoy.com/view/sXsXzl"
+tags = ["tunnel", "optics", "fiber"]
+passes = ["image"]
+
+[render_targets.image]
+source = "image.glsl"
+bindings = []
+

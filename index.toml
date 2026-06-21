@@ -2,7 +2,7 @@
 # Re-run after adding/editing shaders:  .\update-index.ps1
 
 schema_version = 1
-library_version = "1.1.0"
+library_version = "1.2.0"
 
 [[shader]]
 slug = "1d-radial-lightmap"
@@ -25,6 +25,16 @@ updated = "2026-06-18"
 sha256 = "a1fe464d4093b284ff466a3125b7db4f8c98316af05c3fea48234b2a6fcab3a5"
 
 [[shader]]
+slug = "another-synthwave-sunset-thing"
+name = "Another Synthwave Sunset Thing"
+author = "stduhpf"
+source_url = "https://www.shadertoy.com/view/tsScRK"
+tags = ["raymarching", "sunset", "synthwave"]
+added_in = "1.2.0"
+updated = "2026-06-21"
+sha256 = "6cfe4fdc4489fb05a474b84e66d10434622eb502f68368f23111d534f84f5d45"
+
+[[shader]]
 slug = "audio-visualizer"
 name = "Audio Visualizer"
 author = "pixartist"
@@ -43,6 +53,26 @@ tags = ["Audio Reactive", "Raymarching", "Visualizer"]
 added_in = "1.0.0"
 updated = "2026-06-18"
 sha256 = "2993755f7c094cad35708b22db01590bd99617701870d8af407921e2596ea612"
+
+[[shader]]
+slug = "aurora-borealis-horizon"
+name = "Aurora Borealis Horizon"
+author = "bdhwan"
+source_url = "https://www.shadertoy.com/view/f3lSWn"
+tags = ["reflection", "gradient", "sky", "landscape", "aurora"]
+added_in = "1.2.0"
+updated = "2026-06-21"
+sha256 = "477782c56acf4cb96dd81f142ea9ae6d467657bb97b3d57fda16ce525049ec5b"
+
+[[shader]]
+slug = "aurora-paint"
+name = "Aurora Paint"
+author = "noztol"
+source_url = "https://www.shadertoy.com/view/N3lXzS"
+tags = ["2d", "paint", "aurora"]
+added_in = "1.2.0"
+updated = "2026-06-21"
+sha256 = "0a6182633c25ece7fb3904f5a27dc3f61f4fb9c99a7abdb21fbf7cf64af86d59"
 
 [[shader]]
 slug = "basic-audio-visualizer"
@@ -83,6 +113,16 @@ tags = ["zef", "planet"]
 added_in = "1.1.0"
 updated = "2026-06-20"
 sha256 = "a09a067ce781f229bd6f106f279445f653e828ef8551697dee7ba7064759a94d"
+
+[[shader]]
+slug = "cineshader-lava"
+name = "CineShader Lava"
+author = "edankwan"
+source_url = "https://www.shadertoy.com/view/3sySRK"
+tags = ["cineshader", "lavalamp"]
+added_in = "1.2.0"
+updated = "2026-06-21"
+sha256 = "748e51e2812a22c7314b0a98fb5ebccf0eadc040677b1335f64726a2bfe17312"
 
 [[shader]]
 slug = "circular-bar-audio-visualizer"
@@ -145,6 +185,16 @@ updated = "2026-06-20"
 sha256 = "faa500c979e9feeec697b17ee5be46809ee324bfff1434a73af5b177b386be08"
 
 [[shader]]
+slug = "dual-radial-gradient-blend"
+name = "Dual Radial Gradient Blend"
+author = "bdhwan"
+source_url = "https://www.shadertoy.com/view/7XfXDr"
+tags = ["procedural", "radial", "gradient"]
+added_in = "1.2.0"
+updated = "2026-06-21"
+sha256 = "7308d4888e8a592a11e5e184f008ca360c6467e323f4e725cc14e7ca6912acd2"
+
+[[shader]]
 slug = "dull-skull"
 name = "Dull Skull"
 author = "Katur"
@@ -203,6 +253,36 @@ tags = ["raymarch", "helix", "cover", "reproduction"]
 added_in = "1.1.0"
 updated = "2026-06-20"
 sha256 = "524e614eb93ec2707a4f49894910dbd0ae6c002018970d835f16c113086fb9fd"
+
+[[shader]]
+slug = "fiber-optics"
+name = "Fiber Optics"
+author = "noztol"
+source_url = "https://www.shadertoy.com/view/sXsXzl"
+tags = ["tunnel", "optics", "fiber"]
+added_in = "1.2.0"
+updated = "2026-06-21"
+sha256 = "ad1d6775ad4d00aade70cd9d394cd00bfb0daf8cd8263de86092f675dc941399"
+
+[[shader]]
+slug = "fluorescent-flow"
+name = "Fluorescent Flow"
+author = "Frostbyte_"
+source_url = "https://www.shadertoy.com/view/sXfXz4"
+tags = ["3d", "volume", "swirl"]
+added_in = "1.2.0"
+updated = "2026-06-21"
+sha256 = "64f33c8a7bddcc51d01029e1016c947510c3c59dbf4c221e0fe7235600271e0a"
+
+[[shader]]
+slug = "fractal-pyramid"
+name = "Fractal Pyramid"
+author = "bradjamesgrant"
+source_url = "https://www.shadertoy.com/view/tsXBzS"
+tags = ["fractal"]
+added_in = "1.2.0"
+updated = "2026-06-21"
+sha256 = "fc253f56310bb9d5ae8af73eed2a0c81215781c2da46e7d391be581439dff4ee"
 
 [[shader]]
 slug = "full-spectrum-cyber"
@@ -355,6 +435,16 @@ updated = "2026-06-20"
 sha256 = "ceb9da151ace19f4fc79529ee487856240876340ffeac213886f2120cb2c2729"
 
 [[shader]]
+slug = "neon-nuance"
+name = "Neon Nuance"
+author = "ostaver"
+source_url = "https://www.shadertoy.com/view/s3fXDH"
+tags = ["colorful", "neon"]
+added_in = "1.2.0"
+updated = "2026-06-21"
+sha256 = "442c585cd238f321974b2c322d107feaf7712d16089ea5aff898c478bbb97e67"
+
+[[shader]]
 slug = "neonwave-sunrise"
 name = "Neonwave Sunrise"
 author = "mrange"
@@ -383,6 +473,16 @@ tags = ["road", "fake3d", "muchtiny"]
 added_in = "1.1.0"
 updated = "2026-06-20"
 sha256 = "00bb24c8ee8e7ad3086a99621e74e01235b90413a8980ff481080084999e2e37"
+
+[[shader]]
+slug = "pink-pursuit"
+name = "Pink Pursuit"
+author = "Frostbyte_"
+source_url = "https://www.shadertoy.com/view/fXsXzs"
+tags = ["noise", "simple", "raymarch"]
+added_in = "1.2.0"
+updated = "2026-06-21"
+sha256 = "4314ba5012dc9017293d3a8c31e3282e53014689e3d270171c4130730f00f0e7"
 
 [[shader]]
 slug = "pixelated-rgb"
@@ -445,6 +545,16 @@ updated = "2026-06-18"
 sha256 = "29f5e3157f1917013c2e8843c7ec054ceb45dd79d50cc9cb6f04741cefd8adf6"
 
 [[shader]]
+slug = "sea-sky"
+name = "Sea & Sky"
+author = "attefable"
+source_url = "https://www.shadertoy.com/view/sXlSWl"
+tags = ["procedural", "waves", "clouds", "water"]
+added_in = "1.2.0"
+updated = "2026-06-21"
+sha256 = "166a53c55408006695fd7bdd00f9c21ea3683a28ca05dd1ffe54f221797f2e3d"
+
+[[shader]]
 slug = "shader-royale"
 name = "Shader Royale"
 author = "NuSan"
@@ -455,6 +565,16 @@ updated = "2026-06-18"
 sha256 = "98e151db98ab79a3e8ba944e9f3cee5b922b769ef4d6f8a0bf0cb4810bd59b60"
 
 [[shader]]
+slug = "signal-loom"
+name = "Signal Loom"
+author = "OneHung"
+source_url = "https://www.shadertoy.com/view/7XXXzj"
+tags = ["loom"]
+added_in = "1.2.0"
+updated = "2026-06-21"
+sha256 = "5b74047c07502c601af6956d06821cbf4492a276c02a63972ec79a74ab64e57a"
+
+[[shader]]
 slug = "singularity"
 name = "Singularity"
 author = "Xor"
@@ -463,6 +583,26 @@ tags = ["space", "golf", "interstellar"]
 added_in = "1.1.0"
 updated = "2026-06-20"
 sha256 = "a49ccd965350587f07c35157a4cae534c72dfa3c69abb516c49acd21a276c0d8"
+
+[[shader]]
+slug = "smoke-on-the-water"
+name = "Smoke On The Water (Mouse Interactive)"
+author = "yyf1994"
+source_url = "https://www.shadertoy.com/view/wXsyWf"
+tags = ["simulation", "fluid", "mouse", "smoke"]
+added_in = "1.2.0"
+updated = "2026-06-21"
+sha256 = "487739f9b9fcf24e278650b898e4fa6a2f6943dddbe1c9dddf7f0e3b6309dd97"
+
+[[shader]]
+slug = "spacetime-earth-and-moon"
+name = "Spacetime Earth & Moon"
+author = "maximka32248"
+source_url = "https://www.shadertoy.com/view/fXjGDW"
+tags = ["space", "gravitation", "spacetime"]
+added_in = "1.2.0"
+updated = "2026-06-21"
+sha256 = "6bb55f7fd9ac22120e48912c993df6366a6fa441794711a3b6994e66763b03e4"
 
 [[shader]]
 slug = "squares-background-v2"
@@ -525,6 +665,16 @@ updated = "2026-06-20"
 sha256 = "b2c05ce87b32f9b2de4a4787f63357a24cc02ef9fea7928add295f56f250f5cf"
 
 [[shader]]
+slug = "the-universe-within"
+name = "The Universe Within"
+author = "BigWIngs"
+source_url = "https://www.shadertoy.com/view/lscczl"
+tags = ["psychedelic", "universe", "space"]
+added_in = "1.2.0"
+updated = "2026-06-21"
+sha256 = "d1a05d0b8be69ec78cdd875de63e5c632df93f09928b8d924fc4b907833c3905"
+
+[[shader]]
 slug = "tunnel-of-lights"
 name = "Tunnel Of Lights"
 author = "nocrex"
@@ -556,13 +706,13 @@ sha256 = "a9c479ec569c9e6a579a21e86fa9766c04dbb6cf46851f6bf08c206ac05cbf62"
 
 [[shader]]
 slug = "vista-style"
-name = "Visa Style"
+name = "Vista Style"
 author = "Nanerbeet"
 source_url = "https://www.shadertoy.com/view/Xf2XWt"
 tags = ["gradient", "background", "vista"]
 added_in = "1.1.0"
-updated = "2026-06-20"
-sha256 = "b0fc1825d2e4db0efb0475c3277784f7c5b37494685ad8089e7f57ba0606db83"
+updated = "2026-06-21"
+sha256 = "2c4d981ff35162eada40c37b8251421216dd42490aa0481db4ac518b502b07e0"
 
 [[shader]]
 slug = "voronoi-blocks"
@@ -603,3 +753,13 @@ tags = ["Retro", "Nostalgia", "Minimal", "Abstract"]
 added_in = "1.0.0"
 updated = "2026-06-18"
 sha256 = "9bf99cdc10cef5e65cf65ad20ed8fea3b1e6154b3be5dcc838ca4e36b6257867"
+
+[[shader]]
+slug = "world-loom"
+name = "World Loom"
+author = "OneHung"
+source_url = "https://www.shadertoy.com/view/sXfSz2"
+tags = ["loom"]
+added_in = "1.2.0"
+updated = "2026-06-21"
+sha256 = "4464bb65a31a7554ce4222a7f0be33242e7ee38e0ebc70730b70e766732d3a9b"

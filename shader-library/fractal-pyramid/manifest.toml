@@ -1,0 +1,12 @@
+[wallpaper]
+name = "Fractal Pyramid"
+author = "bradjamesgrant"
+version = "1.0.0"
+source_url = "https://www.shadertoy.com/view/tsXBzS"
+tags = ["fractal"]
+passes = ["image"]
+
+[render_targets.image]
+source = "image.glsl"
+bindings = []
+

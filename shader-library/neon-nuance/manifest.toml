@@ -1,0 +1,12 @@
+[wallpaper]
+name = "Neon Nuance"
+author = "ostaver"
+version = "1.0.0"
+source_url = "https://www.shadertoy.com/view/s3fXDH"
+tags = ["colorful", "neon"]
+passes = ["image"]
+
+[render_targets.image]
+source = "image.glsl"
+bindings = []
+

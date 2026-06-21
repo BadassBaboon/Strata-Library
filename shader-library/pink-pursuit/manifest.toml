@@ -1,0 +1,12 @@
+[wallpaper]
+name = "Pink Pursuit"
+author = "Frostbyte_"
+version = "1.0.0"
+source_url = "https://www.shadertoy.com/view/fXsXzs"
+tags = ["noise", "simple", "raymarch"]
+passes = ["image"]
+
+[render_targets.image]
+source = "image.glsl"
+bindings = []
+

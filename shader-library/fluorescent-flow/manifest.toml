@@ -1,0 +1,12 @@
+[wallpaper]
+name = "Fluorescent Flow"
+author = "Frostbyte_"
+version = "1.0.0"
+source_url = "https://www.shadertoy.com/view/sXfXz4"
+tags = ["3d", "volume", "swirl"]
+passes = ["image"]
+
+[render_targets.image]
+source = "image.glsl"
+bindings = []
+

@@ -1,0 +1,12 @@
+[wallpaper]
+name = "Spacetime Earth & Moon"
+author = "maximka32248"
+version = "1.0.0"
+source_url = "https://www.shadertoy.com/view/fXjGDW"
+tags = ["space", "gravitation", "spacetime"]
+passes = ["image"]
+
+[render_targets.image]
+source = "image.glsl"
+bindings = []
+

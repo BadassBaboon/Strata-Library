@@ -1,0 +1,14 @@
+[wallpaper]
+name = "The Universe Within"
+author = "BigWIngs"
+version = "1.0.0"
+source_url = "https://www.shadertoy.com/view/lscczl"
+tags = ["psychedelic", "universe", "space"]
+passes = ["image"]
+
+[render_targets.image]
+source = "image.glsl"
+bindings = [
+    { channel = 0, type = "audio" }
+]
+

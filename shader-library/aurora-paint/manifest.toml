@@ -1,0 +1,12 @@
+[wallpaper]
+name = "Aurora Paint"
+author = "noztol"
+version = "1.0.0"
+source_url = "https://www.shadertoy.com/view/N3lXzS"
+tags = ["2d", "paint", "aurora"]
+passes = ["image"]
+
+[render_targets.image]
+source = "image.glsl"
+bindings = []
+
