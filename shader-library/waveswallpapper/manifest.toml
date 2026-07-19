@@ -1,0 +1,12 @@
+[wallpaper]
+name = "Waves Wallpaper"
+author = "Gryto"
+version = "1.0.0"
+source_url = "https://www.shadertoy.com/view/scX3Dj"
+tags = ["waves", "wallpaper"]
+passes = ["image"]
+
+[render_targets.image]
+source = "image.glsl"
+bindings = []
+

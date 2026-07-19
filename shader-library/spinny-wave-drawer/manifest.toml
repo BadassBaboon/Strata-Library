@@ -1,0 +1,12 @@
+[wallpaper]
+name = "Spinny wave drawer"
+author = "chevin"
+version = "1.0.0"
+source_url = "https://www.shadertoy.com/view/w3dBWN"
+tags = ["wave", "spin"]
+passes = ["image"]
+
+[render_targets.image]
+source = "image.glsl"
+bindings = []
+

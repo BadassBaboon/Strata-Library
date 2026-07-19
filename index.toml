@@ -2,7 +2,7 @@
 # Re-run after adding/editing shaders:  .\update-index.ps1
 
 schema_version = 1
-library_version = "1.2.0"
+library_version = "1.3.0"
 
 [[shader]]
 slug = "1d-radial-lightmap"
@@ -23,6 +23,16 @@ tags = ["Audio Reactive", "3D", "Visualizer"]
 added_in = "1.0.0"
 updated = "2026-06-18"
 sha256 = "a1fe464d4093b284ff466a3125b7db4f8c98316af05c3fea48234b2a6fcab3a5"
+
+[[shader]]
+slug = "animated-tunnel"
+name = "Animated Tunnel"
+author = "koi"
+source_url = "https://www.shadertoy.com/view/7ctGz4"
+tags = ["tunnel", "animated", "loop", "ca"]
+added_in = "1.3.0"
+updated = "2026-07-19"
+sha256 = "7c4b56ad00122af74c4b90b0b938aa122cd195dadc5397747c3b676ed407c97e"
 
 [[shader]]
 slug = "another-synthwave-sunset-thing"
@@ -103,6 +113,16 @@ tags = ["Abstract", "Shiny", "Colorful"]
 added_in = "1.0.0"
 updated = "2026-06-18"
 sha256 = "229bc4a5f68dc3ec6521bbe040e8c8d9c937035ee9b9476f146cad4069224974"
+
+[[shader]]
+slug = "celestial-astrolabe"
+name = "Celestial Astrolabe"
+author = "Svania"
+source_url = "https://www.shadertoy.com/view/7cd3zM"
+tags = ["shape", "minimal"]
+added_in = "1.3.0"
+updated = "2026-07-19"
+sha256 = "1a8635618bdb9db28d4343f7ffbd6071c1c065acec74865b1832eec285bdedc0"
 
 [[shader]]
 slug = "chillwave-planet"
@@ -435,6 +455,26 @@ updated = "2026-06-20"
 sha256 = "ceb9da151ace19f4fc79529ee487856240876340ffeac213886f2120cb2c2729"
 
 [[shader]]
+slug = "music-islands"
+name = "Music Islands"
+author = "noztol"
+source_url = "https://www.shadertoy.com/view/7fc3z7"
+tags = ["music", "landscape", "Visualizer"]
+added_in = "1.3.0"
+updated = "2026-07-19"
+sha256 = "14e1c0d4e7cf2e64045ee35e56a46df2b9046742d63f0174f22f6083933dd614"
+
+[[shader]]
+slug = "music-tunnel"
+name = "music tunnel"
+author = "nayk"
+source_url = "https://www.shadertoy.com/view/s3jSWz"
+tags = ["tunnel", "Visualizer"]
+added_in = "1.3.0"
+updated = "2026-07-19"
+sha256 = "231e7f29fda327e01edfd3de83d9cfba41ca75d006e943cd6fb9a50d5b100c1a"
+
+[[shader]]
 slug = "neon-nuance"
 name = "Neon Nuance"
 author = "ostaver"
@@ -443,6 +483,16 @@ tags = ["colorful", "neon"]
 added_in = "1.2.0"
 updated = "2026-06-21"
 sha256 = "442c585cd238f321974b2c322d107feaf7712d16089ea5aff898c478bbb97e67"
+
+[[shader]]
+slug = "neon-ring-spectrum"
+name = "Neon Ring Spectrum"
+author = "nolascoin"
+source_url = "https://www.shadertoy.com/view/f3jSDV"
+tags = ["sound", "visualizer", "soundvisualizer"]
+added_in = "1.3.0"
+updated = "2026-07-19"
+sha256 = "b44668660a357ffa5811363604f890fe016b86955e27a9d372c18931cf8c1254"
 
 [[shader]]
 slug = "neonwave-sunrise"
@@ -525,6 +575,26 @@ updated = "2026-06-20"
 sha256 = "5084274b37227346423c765a259e1bde8132adc81194dee7b7f36ed6cde8e848"
 
 [[shader]]
+slug = "random-snake-game"
+name = "Random Snake Game"
+author = "GregTao"
+source_url = "https://www.shadertoy.com/view/ff3Gz2"
+tags = ["random", "snake"]
+added_in = "1.3.0"
+updated = "2026-07-19"
+sha256 = "f696edaec40c4860577365d59e702934e37e340df6ece9f2ffad01896ef39979"
+
+[[shader]]
+slug = "recursive-parallax-corridor"
+name = "Recursive Parallax Corridor"
+author = "Svania"
+source_url = "https://www.shadertoy.com/view/ffcGzf"
+tags = ["3d", "parallax"]
+added_in = "1.3.0"
+updated = "2026-07-19"
+sha256 = "59244b7778c1f91f0c0d7f3660d2c660ad35fc5196fd549dbcc66e280f28eff1"
+
+[[shader]]
 slug = "retro-sun"
 name = "Retro Sun"
 author = "FraglessPlayer"
@@ -585,6 +655,16 @@ updated = "2026-06-20"
 sha256 = "a49ccd965350587f07c35157a4cae534c72dfa3c69abb516c49acd21a276c0d8"
 
 [[shader]]
+slug = "smax-vs-max"
+name = "Smax vs Max"
+author = "shuhu"
+source_url = "https://www.shadertoy.com/view/sf33RN"
+tags = ["2d", "math", "sdf", "smax"]
+added_in = "1.3.0"
+updated = "2026-07-19"
+sha256 = "641b8adf1a040ac9e30ba074c7afb79facf6e4a4529b2bc2944822e0c64e678c"
+
+[[shader]]
 slug = "smoke-on-the-water"
 name = "Smoke On The Water (Mouse Interactive)"
 author = "yyf1994"
@@ -603,6 +683,16 @@ tags = ["space", "gravitation", "spacetime"]
 added_in = "1.2.0"
 updated = "2026-06-21"
 sha256 = "6bb55f7fd9ac22120e48912c993df6366a6fa441794711a3b6994e66763b03e4"
+
+[[shader]]
+slug = "spinny-wave-drawer"
+name = "Spinny wave drawer"
+author = "chevin"
+source_url = "https://www.shadertoy.com/view/w3dBWN"
+tags = ["wave", "spin"]
+added_in = "1.3.0"
+updated = "2026-07-19"
+sha256 = "641ce23716f9ecc2c2ddde67fd3d7237844f573aac3da6337f6daf554680c4cf"
 
 [[shader]]
 slug = "squares-background-v2"
@@ -685,6 +775,16 @@ updated = "2026-06-20"
 sha256 = "8b5a709c3f2baa6fd79310cccfe177a5fc0ee1f2d8377032feacdaa7fdb46daf"
 
 [[shader]]
+slug = "two-and-a-half-d-iatribes"
+name = "Two And a Half D"
+author = "ArthurTent"
+source_url = "https://www.shadertoy.com/view/sc3GWM"
+tags = ["tunnel", "ribbons", "reactive", "audio", "dda", "shaderamp", "diatribes"]
+added_in = "1.3.0"
+updated = "2026-07-19"
+sha256 = "987e11d7dad0966d74109f00442dddf805d64a70b3bc86d90c6f582cbd8f9333"
+
+[[shader]]
 slug = "unimagined"
 name = "Unimagined"
 author = "OldEclipse"
@@ -735,6 +835,16 @@ updated = "2026-06-18"
 sha256 = "38dcf61e0d3ba43739d172b03f050d0a849fdc72b782d38c1bc810b6eb5ce62b"
 
 [[shader]]
+slug = "waveswallpapper"
+name = "Waves Wallpaper"
+author = "Gryto"
+source_url = "https://www.shadertoy.com/view/scX3Dj"
+tags = ["waves", "wallpaper"]
+added_in = "1.3.0"
+updated = "2026-07-19"
+sha256 = "d76d82b84e3baba6629dd3083eb1e7639a6f4b09a5112e09668dc24b64a5735c"
+
+[[shader]]
 slug = "weird-truchet"
 name = "Weird Truchet"
 author = "byt3_m3chanic"
@@ -743,6 +853,16 @@ tags = ["2d"]
 added_in = "1.1.0"
 updated = "2026-06-20"
 sha256 = "52a485c88ccb2208396e7d207926c63848ee6626358618311bae4da0806795f3"
+
+[[shader]]
+slug = "winamp-wave"
+name = "Winamp Wave"
+author = "noztol"
+source_url = "https://www.shadertoy.com/view/Nf3GWB"
+tags = ["wave", "audio", "winamp", "llama"]
+added_in = "1.3.0"
+updated = "2026-07-19"
+sha256 = "e50ecef4968a4be019f0287cbbb26b1b86db76cbebcc1a6fc712447c2f297566"
 
 [[shader]]
 slug = "windows-95"

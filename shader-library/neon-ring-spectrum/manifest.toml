@@ -1,0 +1,14 @@
+[wallpaper]
+name = "Neon Ring Spectrum"
+author = "nolascoin"
+version = "1.0.0"
+source_url = "https://www.shadertoy.com/view/f3jSDV"
+tags = ["sound", "visualizer", "soundvisualizer"]
+passes = ["image"]
+
+[render_targets.image]
+source = "image.glsl"
+bindings = [
+    { channel = 0, type = "audio" }
+]
+

@@ -1,0 +1,23 @@
+[wallpaper]
+name = "Two And a Half D"
+author = "ArthurTent"
+version = "1.0.0"
+source_url = "https://www.shadertoy.com/view/sc3GWM"
+tags = ["tunnel", "ribbons", "reactive", "audio", "dda", "shaderamp", "diatribes"]
+passes = ["bufferA", "image"]
+
+[render_targets.bufferA]
+source = "bufferA.glsl"
+bindings = [
+    { channel = 0, type = "audio" },
+    { channel = 1, type = "buffer", target = "bufferA", wrap = "clamp" }
+]
+
+[render_targets.image]
+source = "image.glsl"
+bindings = [
+    { channel = 0, type = "buffer", target = "bufferA", wrap = "clamp" },
+    { channel = 1, type = "audio" },
+    { channel = 3, type = "texture", path = "cb49c003b454385aa9975733aff4571c62182ccdda480aaba9a8d250014f00ec.png" }
+]
+

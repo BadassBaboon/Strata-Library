@@ -1,0 +1,14 @@
+[wallpaper]
+name = "Winamp Wave"
+author = "noztol"
+version = "1.0.0"
+source_url = "https://www.shadertoy.com/view/Nf3GWB"
+tags = ["wave", "audio", "winamp", "llama"]
+passes = ["image"]
+
+[render_targets.image]
+source = "image.glsl"
+bindings = [
+    { channel = 0, type = "audio" }
+]
+

@@ -1,0 +1,14 @@
+[wallpaper]
+name = "music tunnel"
+author = "nayk"
+version = "1.0.0"
+source_url = "https://www.shadertoy.com/view/s3jSWz"
+tags = ["tunnel", "Visualizer"]
+passes = ["image"]
+
+[render_targets.image]
+source = "image.glsl"
+bindings = [
+    { channel = 0, type = "audio" }
+]
+

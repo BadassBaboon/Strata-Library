@@ -1,0 +1,12 @@
+[wallpaper]
+name = "Animated Tunnel"
+author = "koi"
+version = "1.0.0"
+source_url = "https://www.shadertoy.com/view/7ctGz4"
+tags = ["tunnel", "animated", "loop", "ca"]
+passes = ["image"]
+
+[render_targets.image]
+source = "image.glsl"
+bindings = []
+

@@ -1,0 +1,12 @@
+[wallpaper]
+name = "Celestial Astrolabe"
+author = "Svania"
+version = "1.0.0"
+source_url = "https://www.shadertoy.com/view/7cd3zM"
+tags = ["shape", "minimal"]
+passes = ["image"]
+
+[render_targets.image]
+source = "image.glsl"
+bindings = []
+

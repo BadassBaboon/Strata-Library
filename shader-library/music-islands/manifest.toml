@@ -1,0 +1,14 @@
+[wallpaper]
+name = "Music Islands"
+author = "noztol"
+version = "1.0.0"
+source_url = "https://www.shadertoy.com/view/7fc3z7"
+tags = ["music", "landscape", "Visualizer"]
+passes = ["image"]
+
+[render_targets.image]
+source = "image.glsl"
+bindings = [
+    { channel = 0, type = "audio" }
+]
+

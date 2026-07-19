@@ -1,0 +1,12 @@
+[wallpaper]
+name = "Recursive Parallax Corridor"
+author = "Svania"
+version = "1.0.0"
+source_url = "https://www.shadertoy.com/view/ffcGzf"
+tags = ["3d", "parallax"]
+passes = ["image"]
+
+[render_targets.image]
+source = "image.glsl"
+bindings = []
+

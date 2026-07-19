@@ -1,0 +1,12 @@
+[wallpaper]
+name = "Smax vs Max"
+author = "shuhu"
+version = "1.0.0"
+source_url = "https://www.shadertoy.com/view/sf33RN"
+tags = ["2d", "math", "sdf", "smax"]
+passes = ["image"]
+
+[render_targets.image]
+source = "image.glsl"
+bindings = []
+

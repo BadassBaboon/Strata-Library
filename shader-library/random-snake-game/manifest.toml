@@ -1,0 +1,20 @@
+[wallpaper]
+name = "Random Snake Game"
+author = "GregTao"
+version = "1.0.0"
+source_url = "https://www.shadertoy.com/view/ff3Gz2"
+tags = ["random", "snake"]
+passes = ["bufferA", "image"]
+
+[render_targets.bufferA]
+source = "bufferA.glsl"
+bindings = [
+    { channel = 0, type = "buffer", target = "bufferA", wrap = "clamp" }
+]
+
+[render_targets.image]
+source = "image.glsl"
+bindings = [
+    { channel = 0, type = "buffer", target = "bufferA", wrap = "clamp" }
+]
+
